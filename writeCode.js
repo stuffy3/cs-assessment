@@ -1,4 +1,4 @@
-// Sum Zero O(n²)
+// Sum Zero O(n²) Space O(1)
 
 // Write your solution below:
 let findZero = (nums) => {
@@ -19,7 +19,7 @@ let nums = [12, 34, 10, -20, 67, 1]
 
 findZero(nums)
 
-//Unique Characters O(n)
+//Unique Characters O(n) Space O(1)
 
 let uniqueChars = (string) => {
     for (let i=0; i<string.length; i++) {
@@ -33,14 +33,14 @@ let uniqueChars = (string) => {
 let f = uniqueChars('Monday')
 console.log(f)
 
-//Pangram Sentence O(1)
+//Pangram Sentence O(1) Space O(1)
 
 function isPangram(string) {
     var regex = /([a-z])(?!.*\1)/g;
     return (string.match(regex) || []).length === 26;
 }
 
-//Longest Word O(1)
+//Longest Word O(1) Space O(1)
 
 let findLongestWord = (array) => Math.max(...(array.map(el => el.length)));
 
