@@ -40,7 +40,7 @@ function isPangram(string) {
     return (string.match(regex) || []).length === 26;
 }
 
-//Longest Word O(1) Space O(1)
+//Longest Word O(n) Space O(1)
 
 let findLongestWord = (array) => Math.max(...(array.map(el => el.length)));
 
